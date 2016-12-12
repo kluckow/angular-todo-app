@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Todo App</title>
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="res/css/bootstrap.css">
+<!-- MY STYLES -->
+<link rel="stylesheet" href="res/css/todo-app.css">
+<!-- FAVICON -->
+<link rel="shortcut icon" href="res/img/favicon.ico" type="image/png" />
+<link rel="icon" href="res/img/favicon.ico" type="image/png" />
+</head>
+
+<body>
+
+	<div class="row container-fluid">
+	
+		<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav">
+				<li><a ng-href="#/dashboard">Dashboard</a></li>
+				<li><a ng-href="#/todo">Todo Application</a></li>
+				<!-- <li><a ng-href="#/lol">LoL</a></li> -->
+			</ul>
+		</nav>
+		<div class="row" ng-controller="DateCtrl as dateCtrl">
+			<div class="col-xs-6 col-sm-1 col-xs-offset-6 col-sm-offset-11 pull-right">
+				<span style="position:absolute; color:black">{{currentTime | date: 'medium'}}</span>
+			</div>
+		</div>
+		<div class="view-container">
+			<div ng-view class="view-frame"></div>
+		</div>
+		
+	</div>
+<script src="res/js/jquery.min.js"></script>
+<script src="res/js/Chart.js"></script>
+<script src="res/js/highcharts.js"></script>
+<script src="res/js/highcharts-more.js"></script>
+<script src="res/js/bootstrap.min.js"></script>
+<script src="res/js/angular.min.js"></script>
+<script src="res/js/angular-route.min.js"></script>
+<script src="res/js/angular-animate.min.js"></script>
+<!-- locale -->
+<script src="res/js/i18n/angular-locale_de-de.js"></script>
+<!-- Main App Module -->
+<script src="app/app.js"></script>
+<!-- Module Controllers -->
+<script src="app/modules/dashboard/controller/modules.dashboard.controller.js"></script>
+<script src="app/modules/todo/controller/modules.todo.controller.js"></script>
+<script src="app/modules/lol/controller/modules.lol.controller.js"></script>
+
+<script src="app/modules/todo/directive/modules.todo.directive.js"></script>
+</body>
+</html>

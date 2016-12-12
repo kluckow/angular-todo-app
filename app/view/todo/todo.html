@@ -1,0 +1,48 @@
+<h1 class="text-center" ng-bind="moduleInfo.title"></h1>
+
+<div class="row">
+	<div class="col-xs-10 col-xs-offset-1 well">
+	
+		<div class="row">
+			<div class="col-xs-4">
+			
+				<div class="col-xs-12">
+					<ul class="list-group col-xs-6">
+						<li ng-repeat="project in projects" class="list-group-item">
+							<span ng-bind="project.title"></span>
+							<span class="badge" ng-bind="project.nrOfTodos"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p>next row paragraph</p>
+					</div>
+				</div>
+				
+			</div>
+		
+			<div class="col-xs-8">
+
+								
+				<div class="col-xs-12">
+				
+				</div>								
+				<div class="col-xs-12">
+					<todo-list-table></todo-list-table>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-6">
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</div>

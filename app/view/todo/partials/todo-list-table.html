@@ -1,0 +1,19 @@
+<h2>Todo List</h2>
+<div class="table-responsive">
+	<table class="table">
+		<thead>
+			<tr>
+				<th ng-repeat="header in todoListTableHeaders" ng-bind="header"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="todo in todos">
+				<td ng-bind="todo.title"></td>
+				<td ng-bind="todo.description"></td>
+				<td ng-bind="todo.project"></td>
+				<td ng-bind="todo.category"></td>
+				<td ng-bind="todo.created"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

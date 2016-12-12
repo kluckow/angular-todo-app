@@ -1,0 +1,21 @@
+# SELECT
+
+# Select for all todos with all info
+# filtering happens in browser
+SELECT todos.title, todos.description, todos.created_on, projects.title, category.title
+FROM todos
+JOIN projects ON todos.project_id = projects.id
+JOIN category ON todos.category_id = category.id;
+
+# Select the projects
+SELECT title, description FROM projects;
+
+# Select categories
+SELECT title, description FROM category;
+
+
+# DELETE
+
+# Delete a single todo
+# $id is parameter sent with angular
+DELETE FROM todos WHERE id=$id:

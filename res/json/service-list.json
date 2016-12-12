@@ -1,0 +1,39 @@
+[
+	{
+		"name":"$http",
+		"method" : [
+			{"name":"get"},
+			{"name":"head"},
+			{"name":"post"},
+			{"name":"put"},
+			{"name":"delete"},
+			{"name":"jsonp"},
+			{"name":"patch"}
+		],
+		"description":"The $http service is a function which takes a single argument — a configuration object — that is used to generate an HTTP request and returns a promise."
+	},
+	{
+		"name":"$log",
+		"method" : [
+			{"name":"reset"},
+			{"name":"assertEmpty"}
+		],
+		"description":"Mock implementation of $log that gathers all logged messages in arrays (one array per logging level). These arrays are exposed as logs property of each of the level-specific log function, e.g. for level error the array is exposed as $log.error.logs."
+	},
+	{
+		"name":"$location",
+		"method" : [
+			{"name":"absUrl"},
+			{"name":"url"},
+			{"name":"protocol"},
+			{"name":"host"},
+			{"name":"port"},
+			{"name":"path"},
+			{"name":"search"},
+			{"name":"hash"},
+			{"name":"replace"},
+			{"name":"state"}
+		],
+		"description":"The $location service parses the URL in the browser address bar (based on the window.location) and makes the URL available to your application. Changes to the URL in the address bar are reflected into $location service and changes to $location are reflected into the browser address bar."
+	}
+]
